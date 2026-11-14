@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gooby: The Buddy Who Wants to Be Deleted</title>
+<meta name="description" content="A 2:32 video about Gooby, the tiny buddy that sits beside your Terminal and teaches you Claude Code until you don't need it.">
+<style>
+  /* Palette from Sources/Character/GoobyVisualMetrics.swift, same as the pitch deck */
+  :root {
+    --gooby: #6fa6c8;
+    --gooby-hi: #94c3dc;
+    --deep: #2c4b61;
+    --ink: #1d3242;
+    --paper: #f5f8fa;
+    --desk: #d7e3ea;
+    --rounded: ui-rounded, "SF Pro Rounded", "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    min-height: 100vh; min-height: 100svh;
+    display: grid; place-items: center;
+    padding: clamp(20px, 5vh, 64px) clamp(16px, 5vw, 72px);
+    background:
+      radial-gradient(120% 80% at 50% 0%, #e8f0f5 0%, transparent 60%),
+      var(--desk);
+    color: var(--ink);
+    font-family: var(--rounded);
+  }
+  main {
+    width: min(1120px, 100%, calc((100svh - 280px) * 16 / 9));
+    min-width: min(100%, 300px);
+  }
+  .stage { position: relative; }
+  .player {
+    border-radius: 18px;
+    background: var(--deep);
+    padding: 0 10px 10px;
+    box-shadow: 0 28px 70px -24px rgb(20 40 55 / .55), 0 0 0 1px rgb(20 40 55 / .35);
+  }
+  .bar {
+    height: 40px;
+    display: flex; align-items: center; gap: 8px;
+    padding: 0 6px;
+    color: #cfe2ee;
+    font-weight: 700; font-size: .9375rem; letter-spacing: -.005em;
+  }
+  .dot { width: 12px; height: 12px; border-radius: 50%; flex: none; }
+  .dot:nth-child(1) { background: var(--paper); }
+  .dot:nth-child(2) { background: var(--gooby-hi); }
+  .dot:nth-child(3) { background: var(--gooby); }
+  .bar .t { flex: 1; text-align: center; margin-right: 52px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .bar .t span { color: var(--gooby-hi); font-weight: 600; }
+  video {
+    display: block; width: 100%; aspect-ratio: 16 / 9;
+    border-radius: 9px;
+    background: #000;
+    image-rendering: pixelated;  /* keep the pixel art crisp when scaled */
+  }
+  video::cue { font-family: var(--rounded); font-size: .9em; background: rgb(29 50 66 / .82); }
+  /* Gooby sits just outside the window's bottom-right corner, like it does beside Terminal */
+  .gooby {
+    position: absolute; right: 0; bottom: 0;
+    width: clamp(64px, 9vw, 118px);
+    translate: 92% 6%;
+    pointer-events: none;
+  }
+  .gooby svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .under {
+    display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 24px;
+    margin: 18px 6px 0;
+  }
+  .tag { margin: 0; font-weight: 800; font-size: clamp(1.125rem, 2.2vw, 1.5rem); letter-spacing: -.02em; color: var(--deep); }
+  .tag span { color: var(--gooby); }
+  .avail { margin: 0; font-weight: 600; font-size: .9375rem; color: #557287; }
+  .credit {
+    margin: 28px 6px 0; text-align: center;
+    font-weight: 600; font-size: .875rem; color: #6b8799;
+  }
+  .credit code {
+    color: var(--deep);
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-weight: 600;
+    padding: .15em .45em; border-radius: 6px;
+    background: rgb(111 166 200 / .18); box-shadow: inset 0 0 0 1px rgb(111 166 200 / .45);
+  }
+  .credit .sep { margin: 0 .5em; color: #9db3c2; }
+  .credit a {
+    color: #2f6f99; font-weight: 700;
+    text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 3px;
+  }
+  .credit a:hover, .credit a:focus-visible { color: var(--deep); text-decoration-thickness: 2.5px; }
+  .credit a:focus-visible { outline: 2px solid var(--gooby); outline-offset: 3px; border-radius: 3px; }
+  @media (max-width: 760px) {
+    /* no room beside the window: Gooby sits on its top edge instead */
+    .gooby { translate: -10% 30%; bottom: 100%; width: 58px; }
+    .bar .t { margin-right: 0; font-size: .8125rem; }
+    .bar .t span { display: none; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="stage">
+    <div class="player">
+      <div class="bar" aria-hidden="true">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        <span class="t">Gooby <span>&middot; The Buddy Who Wants to Be Deleted</span></span>
+      </div>
+      <video controls playsinline preload="metadata" poster="poster.png"
+             aria-label="Gooby: The Buddy Who Wants to Be Deleted, 2 minutes 32 seconds">
+        <source src="gooby-v1.mp4" type="video/mp4">
+        <track kind="captions" src="gooby-v1.vtt" srclang="en" label="English">
+        Your browser can't play this video. <a href="gooby-v1.mp4">Download it (4.3 MB)</a>.
+      </video>
+    </div>
+    <div class="gooby" data-gooby aria-hidden="true"></div>
+  </div>
+  <div class="under">
+    <p class="tag">Learn faster, <span>need Gooby less.</span></p>
+    <p class="avail">Available now for all macOS users &middot; Claude Code CLI only</p>
+  </div>
+  <footer class="credit">
+    Built with <code>/code-to-pitch</code>
+  </footer>
+</main>
+<script>
+(() => {
+  // ---------- Gooby, drawn from GoobyVisualMetrics (design canvas 160 × 144) ----------
+  const B = { x: 27, y: 18, w: 106, h: 96 };
+  function superellipse(n, nBottom, samples = 240) {
+    const a = B.w / 2, b = B.h / 2, cx = B.x + a, cy = B.y + b;
+    const sp = (v, e) => v < 0 ? -Math.pow(-v, e) : Math.pow(v, e);
+    let d = "";
+    for (let i = 0; i < samples; i++) {
+      const t = i / samples * 2 * Math.PI, e = Math.sin(t) > 0 ? nBottom : n;
+      d += (i ? "L" : "M") + (cx + a * sp(Math.cos(t), 2 / e)).toFixed(2) + " " + (cy + b * sp(Math.sin(t), 2 / e)).toFixed(2);
+    }
+    return d + "Z";
+  }
+  const body = superellipse(5.5, 6.5);
+  const armY = B.y + 0.57 * B.h;
+  const heels = [0.435, 0.738].map(f => [B.x + f * B.w, B.y + B.h + 4.6]);
+  const legs = heels.map(([x, y]) => `M${x - 6.7} ${y - 6.1}L${x} ${y}`).join("");
+  const feet = heels.map(([x, y]) => `M${x} ${y}L${x} ${y - 5}`).join("");
+  const arms = `M${B.x + 4} ${armY}L${B.x - 9.5} ${armY + 20}M${B.x + B.w - 4} ${armY}L${B.x + B.w + 9.5} ${armY + 20}`;
+  const limb = d => `
+    <path d="${d}" stroke="#5a90ba" stroke-width="3.4" stroke-linecap="round" fill="none"/>
+    <path d="${d}" stroke="#7fb3d3" stroke-width="2.72" stroke-linecap="round" fill="none" transform="translate(-.3 -.3)"/>
+    <path d="${d}" stroke="rgba(255,255,255,.3)" stroke-width=".8" stroke-linecap="round" fill="none" transform="translate(-.7 -.7)"/>`;
+  const eyes = [70.35, 103.85].map(x => `
+    <g transform="translate(${x} 59.47)"><g class="eye">
+      <ellipse rx="2.15" ry="2.2" fill="#161616"/>
+      <circle class="glint" cx="-.7" cy="-.8" r=".55" fill="rgba(255,255,255,.85)"/>
+    </g></g>`).join("");
+  const svg = id => `
+  <svg viewBox="0 0 160 144" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="${id}V" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#85bad5"/><stop offset=".3" stop-color="#6fa6c8"/>
+        <stop offset=".66" stop-color="#6fa6c8"/><stop offset=".93" stop-color="#568cb5"/><stop offset="1" stop-color="#5188b3"/>
+      </linearGradient>
+      <linearGradient id="${id}L" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#94c3dc" stop-opacity=".85"/><stop offset=".25" stop-color="#94c3dc" stop-opacity="0"/>
+      </linearGradient>
+      <linearGradient id="${id}D" x1=".3" y1=".3" x2="1" y2="1">
+        <stop offset=".6" stop-color="#5188b3" stop-opacity="0"/><stop offset="1" stop-color="#5188b3" stop-opacity=".45"/>
+      </linearGradient>
+      <radialGradient id="${id}S" cx=".08" cy=".08" r=".32">
+        <stop offset="0" stop-color="#fff" stop-opacity=".28"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+      </radialGradient>
+      <clipPath id="${id}C"><path d="${body}"/></clipPath>
+      <filter id="${id}B" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="4"/></filter>
+      <filter id="${id}H" x="-20%" y="-200%" width="140%" height="500%"><feGaussianBlur stdDeviation="2.5"/></filter>
+    </defs>
+    <ellipse class="shadow" cx="80" cy="115.5" rx="50" ry="3" fill="#000" opacity=".28" filter="url(#${id}H)"/>
+    <g class="fig">
+      <g class="arms">${limb(arms)}</g>${limb(legs)}
+      <path d="${body}" fill="url(#${id}V)"/><path d="${body}" fill="url(#${id}L)"/>
+      <path d="${body}" fill="url(#${id}D)"/><path d="${body}" fill="url(#${id}S)"/>
+      <g clip-path="url(#${id}C)">
+        <path d="${body}" fill="none" stroke="#5188b3" stroke-opacity=".35" stroke-width="12" filter="url(#${id}B)" transform="translate(1.5 2.5)"/>
+      </g>
+      ${eyes}
+      <path d="M79.8 70.42Q87.1 73.62 94.4 70.42M78.5 66.32Q81.95 70.87 76.8 73.62M95.7 66.32Q92.25 70.87 97.4 73.62"
+            stroke="#161616" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+      ${limb(feet)}
+    </g>
+  </svg>`;
+
+  // ---------- Bob (±4 pt, 3.2 s) and blink (every 4.8–9.6 s), per Gooby ----------
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)");
+  document.querySelectorAll("[data-rider]").forEach((el, i) => {
+    const tmp = document.createElement("div");
+    tmp.innerHTML = svg("r" + i);
+    el.innerHTML = tmp.firstElementChild.innerHTML;
+    el.setAttribute("data-gooby", "");
+    el.dataset.inline = "1";
+  });
+  const goobies = [...document.querySelectorAll("[data-gooby]")].map((el, i) => {
+    if (!el.dataset.inline) el.innerHTML = svg("g" + i);
+    return {
+      fig: el.querySelector(".fig"), shadow: el.querySelector(".shadow"),
+      eyes: el.querySelectorAll(".eye"), glints: el.querySelectorAll(".glint"),
+      phase: i * 900, nextBlink: performance.now() + 4800 + Math.random() * 4800,
+    };
+  });
+  function openness(g, t) {                // close 90 ms, hold 50 ms, open 140 ms
+    const dt = t - g.nextBlink;
+    if (dt < 0) return 1;
+    if (dt < 90) return 1 - dt / 90;
+    if (dt < 140) return 0;
+    if (dt < 280) return (dt - 140) / 140;
+    g.nextBlink = t + 4800 + Math.random() * 4800;
+    return 1;
+  }
+  function frame(t) {
+    for (const g of goobies) {
+      const off = reduce.matches ? 0 : -4 * Math.sin((t + g.phase) / 3200 * 2 * Math.PI);
+      const open = reduce.matches ? 1 : openness(g, t);
+      const lift = -off / 4;
+      g.fig.setAttribute("transform", `translate(0 ${off.toFixed(2)})`);
+      g.shadow.setAttribute("opacity", (0.28 * (1 - 0.25 * lift)).toFixed(3));
+      g.shadow.setAttribute("rx", (50 * (1 - 0.06 * lift)).toFixed(2));
+      g.eyes.forEach(e => e.setAttribute("transform", `scale(1 ${Math.max(open, 0.14).toFixed(3)})`));
+      g.glints.forEach(e => e.setAttribute("opacity", open > 0.6 ? 1 : 0));
+    }
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+})();
+</script>
+<script>
+// Scrubbing fix. Some static hosts answer video requests without byte ranges ("200, whole file"), so browsers
+// can only play straight through and every seek snaps back. Fetch the whole 4.3 MB file once, then play it from a
+// local Blob URL, which is always seekable. Playback starts immediately from the normal URL; the swap keeps the
+// current time and play state. If the fetch fails, nothing changes.
+(() => {
+  const v = document.querySelector("video");
+  const url = v.querySelector("source").src;
+  fetch(url, { credentials: "same-origin" })
+    .then(r => (r.ok ? r.blob() : Promise.reject(r.status)))
+    .then(blob => {
+      const t = v.currentTime, playing = !v.paused && !v.ended;
+      v.addEventListener("loadedmetadata", () => {
+        if (t) v.currentTime = t;
+        if (playing) v.play().catch(() => {});
+      }, { once: true });
+      v.src = URL.createObjectURL(blob.type ? blob : new Blob([blob], { type: "video/mp4" }));
+    })
+    .catch(() => {});
+})();
+</script>
+</body>
+</html>

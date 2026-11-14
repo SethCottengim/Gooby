@@ -1,0 +1,54 @@
+name: Gooby
+
+options:
+  bundleIdPrefix: com.gooby
+  deploymentTarget:
+    macOS: "14.0"
+
+settings:
+  base:
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+    SWIFT_VERSION: "6.0"
+
+targets:
+  Gooby:
+    type: application
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: Sources
+    info:
+      path: Sources/Info.plist
+      properties:
+        LSUIElement: true
+        NSAppleEventsUsageDescription: "Gooby asks Terminal which window a Claude Code chat is in, so it can offer a skill beside the right window. It only reads tab device names."
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.gooby.visualmvp
+        INFOPLIST_FILE: Sources/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        CODE_SIGNING_ALLOWED: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: ""
+
+  GoobyTests:
+    type: bundle.unit-test
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: GoobyTests
+    dependencies:
+      - target: Gooby
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.gooby.visualmvp.tests
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGNING_ALLOWED: NO
+
+schemes:
+  Gooby:
+    build:
+      targets:
+        Gooby: all
+    test:
+      targets:
+        - GoobyTests

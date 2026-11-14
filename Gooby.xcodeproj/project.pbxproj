@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00D06FEE1F1EAC7D4F48D79D /* GoobyHostingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03022A3D041AF9785061891F /* GoobyHostingView.swift */; };
+		05437ECD4EFB1FD313929A62 /* SingleInstanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876AB49DE9F116DC6EC29C89 /* SingleInstanceTests.swift */; };
+		07359B64A51D7ABA2F1B074D /* StormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CEE33B42D42208E840CA4F /* StormController.swift */; };
+		078611721D4FD2D5D4277919 /* GoobyProjectConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BB13924A3B69FC6BE81533 /* GoobyProjectConfigurationTests.swift */; };
+		0ADE9D10E6F2B15B0512A0B6 /* TerminalWindowLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8535067538C9EA62A035D74 /* TerminalWindowLocator.swift */; };
+		0B016AF9C6551ADED2F42483 /* DrizzleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3676ADE4199A4C3DDFE817 /* DrizzleModel.swift */; };
+		19EB7C28464C52D76E3CEA02 /* GoobyWindowHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5B358862BA784C34719B8 /* GoobyWindowHost.swift */; };
+		27E8BEE2A7E1F8022C9F5604 /* PromptInbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8C1E3B4459F4DB267F2466 /* PromptInbox.swift */; };
+		27F8D4E6542C23E1344B39DC /* GoobyEyeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D596BB43C8399A59AC3E941 /* GoobyEyeView.swift */; };
+		2D07146BE37E52118DBBE5E2 /* PeekPlacement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704445EC32A749206904D7BF /* PeekPlacement.swift */; };
+		318A82C37E0500BCCC80FB23 /* MotionPreferenceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75701D0373728AA90F856D6 /* MotionPreferenceAdapter.swift */; };
+		320A235300C2CFCF5746CFB2 /* SkillCoachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8F19B54FE31F65B39B7E60 /* SkillCoachTests.swift */; };
+		34FB0337CDDD4856CFB075E4 /* ClaudeCLI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67168261D0D3385748D32287 /* ClaudeCLI.swift */; };
+		37CEB0622D76156FF28E3FA2 /* GoobyApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7825913B5038C2BD9D1E0489 /* GoobyApplicationDelegate.swift */; };
+		443C98EF5623B08DECD6C073 /* StaticPlacementPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2990EE376A075708D9A074F /* StaticPlacementPolicy.swift */; };
+		489F03EF3B0A95D9FDEEC89C /* GoobyCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C2FBC39B6456F4CA27E58 /* GoobyCharacterView.swift */; };
+		4F9CE2AB95779FBF7A00A040 /* GoobyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E134489F2D31FBDE4EEC551D /* GoobyApp.swift */; };
+		580854D270AEB9802DE20418 /* ShallowWaterSim.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75BEA31A2DCA23921E7A30F /* ShallowWaterSim.swift */; };
+		5DF8FAED07584201501BDD8B /* SkillWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93184CA30812137D7DB9666C /* SkillWriter.swift */; };
+		6939B122CCB80D95DF203E71 /* GoobyVisualMetricsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF67D114E41643D29E7B12B /* GoobyVisualMetricsTests.swift */; };
+		6A96890D6AC2F870978BAA0D /* GoobyPeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC9AAE79742104F87A76935 /* GoobyPeekView.swift */; };
+		73D5B529E5A3FCA14EC2D440 /* StormOverlays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80026F9074C6713FAAD31C1B /* StormOverlays.swift */; };
+		77215ADD32572340B3A8DE12 /* TerminalFollowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C639218BA8B47946BF28CDD5 /* TerminalFollowTests.swift */; };
+		7950A24A3AFF079D10143660 /* TerminalTabLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B799A5C0CDFBC1A29753469D /* TerminalTabLocator.swift */; };
+		7A9DE66020773AC231DDA988 /* NonActivatingGoobyPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894A7F2E587A788FB1F524EA /* NonActivatingGoobyPanel.swift */; };
+		7ABAB00545EEC38984F1B2E3 /* GoobyAnimationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FE5FDB67788337593FF816 /* GoobyAnimationModel.swift */; };
+		7DDEB1E2B9331DDAB06DDE3C /* NonActivatingGoobyPanelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFBFC228F31331B92D4E061 /* NonActivatingGoobyPanelTests.swift */; };
+		8288C96CADC12EC2388E126B /* TerminalFollower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EB089EB33A8F61671DF48B /* TerminalFollower.swift */; };
+		84E270B04419BDFDA132C88C /* ClaudePresence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF6BA6029E984CBAA24939 /* ClaudePresence.swift */; };
+		850A037C8A878855B447774E /* RetryQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B4DBD9332EB5257CB60515 /* RetryQueue.swift */; };
+		8C7B0896C6EADAD7D08424B6 /* GoobyAnimationModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EF0EBDE8E1543FD694C7C8 /* GoobyAnimationModelTests.swift */; };
+		8D13A3BBA14FAEE722693B08 /* FailSafeHotKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF7EBBD8A6F7414363F021D /* FailSafeHotKey.swift */; };
+		984D77CD2FC92D03B90BD949 /* GoobyFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD040F221336B79A777CF01E /* GoobyFaceView.swift */; };
+		99E2452717AE4186062E4D36 /* SkillOfferBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A0410085D3ADBD936BD125 /* SkillOfferBubble.swift */; };
+		B76CB683C62EB0C4536C3AE3 /* GoobyCloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F49875935D9E8AE9D69444E /* GoobyCloseButton.swift */; };
+		B91AF1C5C4F677284DD07746 /* AccelerometerReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8169682E0067D43A1BBB140 /* AccelerometerReader.swift */; };
+		BC3750736CFC540BB3B1B086 /* SkillCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE200599541C2F85CADD7E /* SkillCatalog.swift */; };
+		CC26264CE3E7EC92B4061593 /* SkillCoach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B459301BD7ABEC58BE32096 /* SkillCoach.swift */; };
+		D2AEB54D3427A95F070B34DF /* TerminalRelativePlacement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962EE7E55CC672A7C9E897DC /* TerminalRelativePlacement.swift */; };
+		D4AAEA488CFE96A2B187F8CB /* ClickStreakDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB58B2D3D7CC8EF29E35C4A /* ClickStreakDetector.swift */; };
+		D6D83B0D77718B25888FE96A /* GoobyVisualMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775CCF1F6CCA9F911FFAD21C /* GoobyVisualMetrics.swift */; };
+		DA2EA128C5F7C39765881438 /* IntentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACEB44CEDBD459039A6282C /* IntentStore.swift */; };
+		DCF2A9A2F85578B0C1B3B5BC /* GoobyWindowHostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BB9EDD4EF8F2853761AEC4 /* GoobyWindowHostTests.swift */; };
+		EC1FDCEAF780316C72978346 /* StormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27637654216770A5D9EEDD32 /* StormTests.swift */; };
+		F0BD01BADB9359C10051EEAA /* GoobyNameTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF93C750D7561546F7AB88AA /* GoobyNameTag.swift */; };
+		F24843A7BB7FF2C7F9944A59 /* StormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D040B8380846D51A55F88AA /* StormModel.swift */; };
+		FA2DB6EECDB3B9E134FFFC45 /* StaticPlacementPolicyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814FDC39AA99D4E9BF48313C /* StaticPlacementPolicyTests.swift */; };
+		FB6BD463F1DFC527C12650D4 /* TranscriptContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36EEB199D5A7D39B2E1C4F7 /* TranscriptContext.swift */; };
+		FCF096C2F468D5024DFEEF47 /* TiltInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B546BFDD6DBC8F76ACA6F9F5 /* TiltInput.swift */; };
+		FD89ACF80A78B48B181F1786 /* IntentClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF59BE7A54FA669F89CE84C2 /* IntentClassifier.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		234E42BEBAA580092E868B6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0269D3D25D739DFE925C6E10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA39BA610D973CEE45615B65;
+			remoteInfo = Gooby;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03022A3D041AF9785061891F /* GoobyHostingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoobyHostingView.swift; sourceTree = "<group>"; };
+		07CEE33B42D42208E840CA4F /* StormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormController.swift; sourceTree = "<group>"; };
+		0B459301BD7ABEC58BE32096 /* SkillCoach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillCoach.swift; sourceTree = "<group>"; };
+		0CF67D114E41643D29E7B12B /* GoobyVisualMetricsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoobyVisualMetricsTests.swift; sourceTree = "<group>"; };
+		1FF7EBBD8A6F7414363F021D /* FailSafeHotKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailSafeHotKey.swift; sourceTree = "<group>"; };
+		27637654216770A5D9EEDD32 /* StormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormTests.swift; sourceTree = "<group>"; };
+		484C2FBC39B6456F4CA27E58 /* GoobyCharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoobyCharacterView.swift; sourceTree = "<group>"; };
+		49EB089EB33A8F61671DF48B /* TerminalFollower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalFollower.swift; sourceTree = "<group>"; };
+		4BB58B2D3D7CC8EF29E35C4A /* ClickStreakDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickStreakDetector.swift; sourceTree = "<group>"; };
+		67168261D0D3385748D32287 /* ClaudeCLI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeCLI.swift; sourceTree = "<group>"; };
+		68AE200599541C2F85CADD7E /* SkillCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillCatalog.swift; sourceTree = "<group>"; };
+		68EF0EBDE8E1543FD694C7C8 /* GoobyAnimationModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoobyAnimationModelTests.swift; sourceTree = "<group>"; };
+		6C46F71629330EA8321AF438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6D596BB43C8399A59AC3E941 /* GoobyEyeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoobyEyeView.swift; sourceTree = "<group>"; };
+		704445EC32A749206904D7BF /* PeekPlacement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeekPlacement.swift; sourceTree = "<group>"; };
+		775CCF1F6CCA9F911FFAD21C /* GoobyVisualMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoobyVisualMetrics.swift; sourceTree = "<group>"; };
+		7825913B5038C2BD9D1E0489 /* GoobyApplicationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoobyApplicationDelegate.swift; sourceTree = "<group>"; };
+		7D040B8380846D51A55F88AA /* StormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormModel.swift; sourceTree = "<group>"; };
+		80026F9074C6713FAAD31C1B /* StormOverlays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormOverlays.swift; sourceTree = "<group>"; };
+		814FDC39AA99D4E9BF48313C /* StaticPlacementPolicyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticPlacementPolicyTests.swift; sourceTree = "<group>"; };
+		82A0410085D3ADBD936BD125 /* SkillOfferBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillOfferBubble.swift; sourceTree = "<group>"; };
+		876AB49DE9F116DC6EC29C89 /* SingleInstanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleInstanceTests.swift; sourceTree = "<group>"; };
+		894A7F2E587A788FB1F524EA /* NonActivatingGoobyPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonActivatingGoobyPanel.swift; sourceTree = "<group>"; };
+		8F3DC77A64189658BEBE4EBB /* GoobyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoobyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F49875935D9E8AE9D69444E /* GoobyCloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoobyCloseButton.swift; sourceTree = "<group>"; };
+		93184CA30812137D7DB9666C /* SkillWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillWriter.swift; sourceTree = "<group>"; };
+		962EE7E55CC672A7C9E897DC /* TerminalRelativePlacement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalRelativePlacement.swift; sourceTree = "<group>"; };
+		96B4DBD9332EB5257CB60515 /* RetryQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryQueue.swift; sourceTree = "<group>"; };
+		96BB9EDD4EF8F2853761AEC4 /* GoobyWindowHostTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoobyWindowHostTests.swift; sourceTree = "<group>"; };
+		AB8F19B54FE31F65B39B7E60 /* SkillCoachTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillCoachTests.swift; sourceTree = "<group>"; };
+		B546BFDD6DBC8F76ACA6F9F5 /* TiltInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltInput.swift; sourceTree = "<group>"; };
+		B75BEA31A2DCA23921E7A30F /* ShallowWaterSim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShallowWaterSim.swift; sourceTree = "<group>"; };
+		B799A5C0CDFBC1A29753469D /* TerminalTabLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalTabLocator.swift; sourceTree = "<group>"; };
+		B8169682E0067D43A1BBB140 /* AccelerometerReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerReader.swift; sourceTree = "<group>"; };
+		BACEB44CEDBD459039A6282C /* IntentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentStore.swift; sourceTree = "<group>"; };
+		BF3676ADE4199A4C3DDFE817 /* DrizzleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrizzleModel.swift; sourceTree = "<group>"; };
+		BF93C750D7561546F7AB88AA /* GoobyNameTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoobyNameTag.swift; sourceTree = "<group>"; };
+		C2990EE376A075708D9A074F /* StaticPlacementPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticPlacementPolicy.swift; sourceTree = "<group>"; };
+		C5FE5FDB67788337593FF816 /* GoobyAnimationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoobyAnimationModel.swift; sourceTree = "<group>"; };
+		C639218BA8B47946BF28CDD5 /* TerminalFollowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalFollowTests.swift; sourceTree = "<group>"; };
+		C9B847A85F4CD1A37991F9F5 /* Gooby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gooby.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDFBFC228F31331B92D4E061 /* NonActivatingGoobyPanelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonActivatingGoobyPanelTests.swift; sourceTree = "<group>"; };
+		D2FF6BA6029E984CBAA24939 /* ClaudePresence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudePresence.swift; sourceTree = "<group>"; };
+		D75701D0373728AA90F856D6 /* MotionPreferenceAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionPreferenceAdapter.swift; sourceTree = "<group>"; };
+		D7BB13924A3B69FC6BE81533 /* GoobyProjectConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoobyProjectConfigurationTests.swift; sourceTree = "<group>"; };
+		DB8C1E3B4459F4DB267F2466 /* PromptInbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptInbox.swift; sourceTree = "<group>"; };
+		DDC9AAE79742104F87A76935 /* GoobyPeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoobyPeekView.swift; sourceTree = "<group>"; };
+		E134489F2D31FBDE4EEC551D /* GoobyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoobyApp.swift; sourceTree = "<group>"; };
+		E8535067538C9EA62A035D74 /* TerminalWindowLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalWindowLocator.swift; sourceTree = "<group>"; };
+		ECC5B358862BA784C34719B8 /* GoobyWindowHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoobyWindowHost.swift; sourceTree = "<group>"; };
+		EF59BE7A54FA669F89CE84C2 /* IntentClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentClassifier.swift; sourceTree = "<group>"; };
+		F36EEB199D5A7D39B2E1C4F7 /* TranscriptContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptContext.swift; sourceTree = "<group>"; };
+		FD040F221336B79A777CF01E /* GoobyFaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoobyFaceView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		2A4B30AE010E5EC81BD615E1 = {
+			isa = PBXGroup;
+			children = (
+				C7C726499F7ADBAED5A83796 /* GoobyTests */,
+				C0E13B7306FEC945BFD0AD77 /* Sources */,
+				438C3A850AE0C5D823CDBE61 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		314840A92AA465CB2301AC0F /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				C5FE5FDB67788337593FF816 /* GoobyAnimationModel.swift */,
+				484C2FBC39B6456F4CA27E58 /* GoobyCharacterView.swift */,
+				6D596BB43C8399A59AC3E941 /* GoobyEyeView.swift */,
+				FD040F221336B79A777CF01E /* GoobyFaceView.swift */,
+				DDC9AAE79742104F87A76935 /* GoobyPeekView.swift */,
+				775CCF1F6CCA9F911FFAD21C /* GoobyVisualMetrics.swift */,
+				D75701D0373728AA90F856D6 /* MotionPreferenceAdapter.swift */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
+		438C3A850AE0C5D823CDBE61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9B847A85F4CD1A37991F9F5 /* Gooby.app */,
+				8F3DC77A64189658BEBE4EBB /* GoobyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70DF4DDE580EDA4A92872B44 /* Desktop */ = {
+			isa = PBXGroup;
+			children = (
+				D2FF6BA6029E984CBAA24939 /* ClaudePresence.swift */,
+				7825913B5038C2BD9D1E0489 /* GoobyApplicationDelegate.swift */,
+				8F49875935D9E8AE9D69444E /* GoobyCloseButton.swift */,
+				03022A3D041AF9785061891F /* GoobyHostingView.swift */,
+				BF93C750D7561546F7AB88AA /* GoobyNameTag.swift */,
+				ECC5B358862BA784C34719B8 /* GoobyWindowHost.swift */,
+				894A7F2E587A788FB1F524EA /* NonActivatingGoobyPanel.swift */,
+				704445EC32A749206904D7BF /* PeekPlacement.swift */,
+				C2990EE376A075708D9A074F /* StaticPlacementPolicy.swift */,
+				49EB089EB33A8F61671DF48B /* TerminalFollower.swift */,
+				962EE7E55CC672A7C9E897DC /* TerminalRelativePlacement.swift */,
+				E8535067538C9EA62A035D74 /* TerminalWindowLocator.swift */,
+			);
+			path = Desktop;
+			sourceTree = "<group>";
+		};
+		888F85101EF4A512680DFD21 /* SkillCoach */ = {
+			isa = PBXGroup;
+			children = (
+				67168261D0D3385748D32287 /* ClaudeCLI.swift */,
+				EF59BE7A54FA669F89CE84C2 /* IntentClassifier.swift */,
+				BACEB44CEDBD459039A6282C /* IntentStore.swift */,
+				DB8C1E3B4459F4DB267F2466 /* PromptInbox.swift */,
+				96B4DBD9332EB5257CB60515 /* RetryQueue.swift */,
+				68AE200599541C2F85CADD7E /* SkillCatalog.swift */,
+				0B459301BD7ABEC58BE32096 /* SkillCoach.swift */,
+				82A0410085D3ADBD936BD125 /* SkillOfferBubble.swift */,
+				93184CA30812137D7DB9666C /* SkillWriter.swift */,
+				B799A5C0CDFBC1A29753469D /* TerminalTabLocator.swift */,
+				F36EEB199D5A7D39B2E1C4F7 /* TranscriptContext.swift */,
+			);
+			path = SkillCoach;
+			sourceTree = "<group>";
+		};
+		8B5FCE130DBCD36A8A26F05E /* EasterEgg */ = {
+			isa = PBXGroup;
+			children = (
+				B8169682E0067D43A1BBB140 /* AccelerometerReader.swift */,
+				4BB58B2D3D7CC8EF29E35C4A /* ClickStreakDetector.swift */,
+				BF3676ADE4199A4C3DDFE817 /* DrizzleModel.swift */,
+				1FF7EBBD8A6F7414363F021D /* FailSafeHotKey.swift */,
+				B75BEA31A2DCA23921E7A30F /* ShallowWaterSim.swift */,
+				07CEE33B42D42208E840CA4F /* StormController.swift */,
+				7D040B8380846D51A55F88AA /* StormModel.swift */,
+				80026F9074C6713FAAD31C1B /* StormOverlays.swift */,
+				B546BFDD6DBC8F76ACA6F9F5 /* TiltInput.swift */,
+			);
+			path = EasterEgg;
+			sourceTree = "<group>";
+		};
+		C0E13B7306FEC945BFD0AD77 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E134489F2D31FBDE4EEC551D /* GoobyApp.swift */,
+				6C46F71629330EA8321AF438 /* Info.plist */,
+				314840A92AA465CB2301AC0F /* Character */,
+				70DF4DDE580EDA4A92872B44 /* Desktop */,
+				8B5FCE130DBCD36A8A26F05E /* EasterEgg */,
+				888F85101EF4A512680DFD21 /* SkillCoach */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C7C726499F7ADBAED5A83796 /* GoobyTests */ = {
+			isa = PBXGroup;
+			children = (
+				68EF0EBDE8E1543FD694C7C8 /* GoobyAnimationModelTests.swift */,
+				D7BB13924A3B69FC6BE81533 /* GoobyProjectConfigurationTests.swift */,
+				0CF67D114E41643D29E7B12B /* GoobyVisualMetricsTests.swift */,
+				96BB9EDD4EF8F2853761AEC4 /* GoobyWindowHostTests.swift */,
+				CDFBFC228F31331B92D4E061 /* NonActivatingGoobyPanelTests.swift */,
+				876AB49DE9F116DC6EC29C89 /* SingleInstanceTests.swift */,
+				AB8F19B54FE31F65B39B7E60 /* SkillCoachTests.swift */,
+				814FDC39AA99D4E9BF48313C /* StaticPlacementPolicyTests.swift */,
+				27637654216770A5D9EEDD32 /* StormTests.swift */,
+				C639218BA8B47946BF28CDD5 /* TerminalFollowTests.swift */,
+			);
+			path = GoobyTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		152ECEF11ACCB3B52073A34C /* GoobyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91EC8FBBFDC9ABA111DF44F4 /* Build configuration list for PBXNativeTarget "GoobyTests" */;
+			buildPhases = (
+				7F73D3AC22C3309232162BEE /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AE2492AD12F2FD857919244 /* PBXTargetDependency */,
+			);
+			name = GoobyTests;
+			packageProductDependencies = (
+			);
+			productName = GoobyTests;
+			productReference = 8F3DC77A64189658BEBE4EBB /* GoobyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BA39BA610D973CEE45615B65 /* Gooby */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A46D219E86469B247586B66 /* Build configuration list for PBXNativeTarget "Gooby" */;
+			buildPhases = (
+				A63989FBE3D2E309C70DA651 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gooby;
+			packageProductDependencies = (
+			);
+			productName = Gooby;
+			productReference = C9B847A85F4CD1A37991F9F5 /* Gooby.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0269D3D25D739DFE925C6E10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 7965A39A428EA31C1252CFBD /* Build configuration list for PBXProject "Gooby" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 2A4B30AE010E5EC81BD615E1;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 438C3A850AE0C5D823CDBE61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA39BA610D973CEE45615B65 /* Gooby */,
+				152ECEF11ACCB3B52073A34C /* GoobyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F73D3AC22C3309232162BEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C7B0896C6EADAD7D08424B6 /* GoobyAnimationModelTests.swift in Sources */,
+				078611721D4FD2D5D4277919 /* GoobyProjectConfigurationTests.swift in Sources */,
+				6939B122CCB80D95DF203E71 /* GoobyVisualMetricsTests.swift in Sources */,
+				DCF2A9A2F85578B0C1B3B5BC /* GoobyWindowHostTests.swift in Sources */,
+				7DDEB1E2B9331DDAB06DDE3C /* NonActivatingGoobyPanelTests.swift in Sources */,
+				05437ECD4EFB1FD313929A62 /* SingleInstanceTests.swift in Sources */,
+				320A235300C2CFCF5746CFB2 /* SkillCoachTests.swift in Sources */,
+				FA2DB6EECDB3B9E134FFFC45 /* StaticPlacementPolicyTests.swift in Sources */,
+				EC1FDCEAF780316C72978346 /* StormTests.swift in Sources */,
+				77215ADD32572340B3A8DE12 /* TerminalFollowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A63989FBE3D2E309C70DA651 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B91AF1C5C4F677284DD07746 /* AccelerometerReader.swift in Sources */,
+				34FB0337CDDD4856CFB075E4 /* ClaudeCLI.swift in Sources */,
+				84E270B04419BDFDA132C88C /* ClaudePresence.swift in Sources */,
+				D4AAEA488CFE96A2B187F8CB /* ClickStreakDetector.swift in Sources */,
+				0B016AF9C6551ADED2F42483 /* DrizzleModel.swift in Sources */,
+				8D13A3BBA14FAEE722693B08 /* FailSafeHotKey.swift in Sources */,
+				7ABAB00545EEC38984F1B2E3 /* GoobyAnimationModel.swift in Sources */,
+				4F9CE2AB95779FBF7A00A040 /* GoobyApp.swift in Sources */,
+				37CEB0622D76156FF28E3FA2 /* GoobyApplicationDelegate.swift in Sources */,
+				489F03EF3B0A95D9FDEEC89C /* GoobyCharacterView.swift in Sources */,
+				B76CB683C62EB0C4536C3AE3 /* GoobyCloseButton.swift in Sources */,
+				27F8D4E6542C23E1344B39DC /* GoobyEyeView.swift in Sources */,
+				984D77CD2FC92D03B90BD949 /* GoobyFaceView.swift in Sources */,
+				00D06FEE1F1EAC7D4F48D79D /* GoobyHostingView.swift in Sources */,
+				F0BD01BADB9359C10051EEAA /* GoobyNameTag.swift in Sources */,
+				6A96890D6AC2F870978BAA0D /* GoobyPeekView.swift in Sources */,
+				D6D83B0D77718B25888FE96A /* GoobyVisualMetrics.swift in Sources */,
+				19EB7C28464C52D76E3CEA02 /* GoobyWindowHost.swift in Sources */,
+				FD89ACF80A78B48B181F1786 /* IntentClassifier.swift in Sources */,
+				DA2EA128C5F7C39765881438 /* IntentStore.swift in Sources */,
+				318A82C37E0500BCCC80FB23 /* MotionPreferenceAdapter.swift in Sources */,
+				7A9DE66020773AC231DDA988 /* NonActivatingGoobyPanel.swift in Sources */,
+				2D07146BE37E52118DBBE5E2 /* PeekPlacement.swift in Sources */,
+				27E8BEE2A7E1F8022C9F5604 /* PromptInbox.swift in Sources */,
+				850A037C8A878855B447774E /* RetryQueue.swift in Sources */,
+				580854D270AEB9802DE20418 /* ShallowWaterSim.swift in Sources */,
+				BC3750736CFC540BB3B1B086 /* SkillCatalog.swift in Sources */,
+				CC26264CE3E7EC92B4061593 /* SkillCoach.swift in Sources */,
+				99E2452717AE4186062E4D36 /* SkillOfferBubble.swift in Sources */,
+				5DF8FAED07584201501BDD8B /* SkillWriter.swift in Sources */,
+				443C98EF5623B08DECD6C073 /* StaticPlacementPolicy.swift in Sources */,
+				07359B64A51D7ABA2F1B074D /* StormController.swift in Sources */,
+				F24843A7BB7FF2C7F9944A59 /* StormModel.swift in Sources */,
+				73D5B529E5A3FCA14EC2D440 /* StormOverlays.swift in Sources */,
+				8288C96CADC12EC2388E126B /* TerminalFollower.swift in Sources */,
+				D2AEB54D3427A95F070B34DF /* TerminalRelativePlacement.swift in Sources */,
+				7950A24A3AFF079D10143660 /* TerminalTabLocator.swift in Sources */,
+				0ADE9D10E6F2B15B0512A0B6 /* TerminalWindowLocator.swift in Sources */,
+				FCF096C2F468D5024DFEEF47 /* TiltInput.swift in Sources */,
+				FB6BD463F1DFC527C12650D4 /* TranscriptContext.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7AE2492AD12F2FD857919244 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA39BA610D973CEE45615B65 /* Gooby */;
+			targetProxy = 234E42BEBAA580092E868B6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A69EC7255045B34E7B831ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		2ACDA20F29988070F0079130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_ALLOWED = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gooby.visualmvp.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gooby.app/Contents/MacOS/Gooby";
+			};
+			name = Debug;
+		};
+		43B42D8B2879E7F1668DF89D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGNING_ALLOWED = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Sources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gooby.visualmvp;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7E24B8236DBE884AB184BF90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		C06EBA14AE39F7B58B9C0AAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_ALLOWED = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gooby.visualmvp.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gooby.app/Contents/MacOS/Gooby";
+			};
+			name = Release;
+		};
+		F2F4E20048690101CA57D91B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGNING_ALLOWED = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Sources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gooby.visualmvp;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A46D219E86469B247586B66 /* Build configuration list for PBXNativeTarget "Gooby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B42D8B2879E7F1668DF89D /* Debug */,
+				F2F4E20048690101CA57D91B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7965A39A428EA31C1252CFBD /* Build configuration list for PBXProject "Gooby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A69EC7255045B34E7B831ED /* Debug */,
+				7E24B8236DBE884AB184BF90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		91EC8FBBFDC9ABA111DF44F4 /* Build configuration list for PBXNativeTarget "GoobyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ACDA20F29988070F0079130 /* Debug */,
+				C06EBA14AE39F7B58B9C0AAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0269D3D25D739DFE925C6E10 /* Project object */;
+}
